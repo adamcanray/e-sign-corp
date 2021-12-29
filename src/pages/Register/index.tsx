@@ -1,10 +1,12 @@
 import { useForm } from "react-hook-form";
+
 type FormData = {
   firstName: string;
   emailAddress: string;
   password: string;
   termsAndConditions: boolean;
 };
+
 const Register = () => {
   const {
     register,
@@ -154,7 +156,7 @@ const Register = () => {
                         type="text"
                         {...register("firstName", { required: true })}
                         placeholder="First Name"
-                        className=" py-2 border-b border-gray-300 hover:border-fuchsia-500 focus:border-fuchsia-500 text-gray-300 outline-0"
+                        className=" py-2 border-b border-gray-300 hover:border-fuchsia-500 focus:border-fuchsia-500 text-gray-500 outline-0"
                       />
                       {errors.firstName && (
                         <span className="text-sm text-red-500">
@@ -172,7 +174,7 @@ const Register = () => {
                         type="email"
                         {...register("emailAddress", { required: true })}
                         placeholder="Email Address"
-                        className=" py-2 border-b border-gray-300 hover:border-fuchsia-500 focus:border-fuchsia-500 text-gray-300 outline-0"
+                        className=" py-2 border-b border-gray-300 hover:border-fuchsia-500 focus:border-fuchsia-500 text-gray-500 outline-0"
                       />
                       {errors.emailAddress && (
                         <span className="text-sm text-red-500">
@@ -190,7 +192,7 @@ const Register = () => {
                         type="password"
                         {...register("password", { required: true })}
                         placeholder="Password"
-                        className=" py-2 border-b border-gray-300 hover:border-fuchsia-500 focus:border-fuchsia-500 text-gray-300 outline-0"
+                        className=" py-2 border-b border-gray-300 hover:border-fuchsia-500 focus:border-fuchsia-500 text-gray-500 outline-0"
                       />
                       {errors.password && (
                         <span className="text-sm text-red-500">

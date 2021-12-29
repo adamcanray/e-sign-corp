@@ -66,7 +66,7 @@ const Login = () => {
                     type="text"
                     {...register("firstName", { required: true })}
                     placeholder="First Name"
-                    className=" py-2 border-b border-gray-300 hover:border-pink-500 focus:border-pink-500 text-gray-300 outline-0"
+                    className=" py-2 border-b border-gray-300 hover:border-pink-500 focus:border-pink-500 text-gray-500 outline-0"
                   />
                   {errors.firstName && (
                     <span className="text-sm text-red-500">
@@ -84,7 +84,7 @@ const Login = () => {
                     type="email"
                     {...register("emailAddress", { required: true })}
                     placeholder="Email Address"
-                    className=" py-2 border-b border-gray-300 hover:border-pink-500 focus:border-pink-500 text-gray-300 outline-0"
+                    className=" py-2 border-b border-gray-300 hover:border-pink-500 focus:border-pink-500 text-gray-500 outline-0"
                   />
                   {errors.emailAddress && (
                     <span className="text-sm text-red-500">
@@ -102,7 +102,7 @@ const Login = () => {
                     type="password"
                     {...register("password", { required: true })}
                     placeholder="Password"
-                    className=" py-2 border-b border-gray-300 hover:border-pink-500 focus:border-pink-500 text-gray-300 outline-0"
+                    className=" py-2 border-b border-gray-300 hover:border-pink-500 focus:border-pink-500 text-gray-500 outline-0"
                   />
                   {errors.password && (
                     <span className="text-sm text-red-500">

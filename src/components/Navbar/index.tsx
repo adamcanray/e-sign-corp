@@ -2,7 +2,7 @@ import { CustomLink } from "..";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 px-10 py-1 flex justify-between items-center bg-gray-900/20 backdrop-blur-sm">
+    <div className="fixed z-10 top-0 left-0 right-0 px-10 py-1 flex justify-between items-center bg-gray-900/20 backdrop-blur-sm">
       <div>
         <p className="text-2xl font-bold text-white">TILAKA</p>
       </div>
@@ -24,6 +24,25 @@ const Navbar = () => {
               />
             </svg>
             <span className="ml-1">DASHBOARD</span>
+          </CustomLink>
+        </li>
+        <li>
+          <CustomLink to={{ pathname: `/e-sign` }}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+              />
+            </svg>
+            <span className="ml-1">E-SIGN</span>
           </CustomLink>
         </li>
         <li>

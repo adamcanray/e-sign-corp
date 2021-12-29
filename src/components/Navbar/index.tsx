@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="fixed z-10 top-0 left-0 right-0 px-10 py-1 flex justify-between items-center bg-gray-900/20 backdrop-blur-sm">
       <div>
-        <p className="text-2xl font-bold text-white">TILAKA</p>
+        <p className="text-2xl font-bold text-white">E-SIGN CORP</p>
       </div>
       <ul className="flex items-center space-x-4">
         <li>

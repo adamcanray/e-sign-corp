@@ -9,7 +9,7 @@ const Dashboard = () => {
   useEffect(() => {
     console.log(findSum(arr1, sum_target_1));
     console.log(findSum(arr2, sum_target_2));
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <div className="bg-home-page bg-no-repeat bg-cover min-h-screen pt-16">
       <div className="flex items-center justify-center min-h-screen">
@@ -18,6 +18,11 @@ const Dashboard = () => {
             <p className="text-xl text-gray-800 font-bold">
               <span className="bg-cyan-200">findSum()</span> function
               implementation:
+              <p className="text-sm text-yellow-500 font-medium">
+                You can also check{" "}
+                <span className="font-bold underline">browsers console</span>{" "}
+                for the result
+              </p>
             </p>
             <p className="text-xl text-gray-700 border border-pink-500 p-4">
               <div className="font-bold">case 1</div>
